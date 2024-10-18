@@ -1,13 +1,13 @@
-body { 
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #e7f1ff; /* Light blue background */
+    background-color: #f0f4f8; /* Very light blue for background */
 }
 
 header {
-    background: #003366; /* Dark blue header */
+    background: #002b36; /* Dark ocean blue for header */
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -24,7 +24,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #ffffff; /* White for nav links */
     text-decoration: none;
 }
 
@@ -37,13 +37,13 @@ section {
 }
 
 section h2 {
-    color: #0056b3; /* Medium blue for section headings */
+    color: #007C92; /* Ocean teal for section headings */
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #003366; /* Dark blue footer */
+    background: #002b36; /* Dark ocean blue for footer */
     color: #ffffff;
     position: relative;
     bottom: 0;
@@ -52,9 +52,9 @@ footer {
 
 /* Link styles */
 a {
-    color: #007bff; /* Bright blue links */
+    color: #0095B7; /* Bright ocean blue for links */
 }
 
 a:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #007C92; /* Darker ocean teal on hover */
 }
