@@ -6,15 +6,12 @@ body {
     background-color: #f0f4f8; /* Very light blue for background */
 }
 
-div {
-    display: flex;
-}
-
 header {
     background: #002b36; /* Dark ocean blue for header */
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
+    display: inline;
 }
 
 nav ul {
