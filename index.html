@@ -53,68 +53,69 @@
     <section id="projects">
         <h2>Artifacts</h2>
         <ul>
+            <li><h3>Inventory Application</h3></li>
+            <li><a href="link-to-project">Inventory Git</a></li>
+        </ul>
+        <ul id="horizontal">
+            <li><img src="Inventory_Pic_Login.PNG" style="width: 25%; height: auto;"></li>
+            <li><img src="Inventory_Pic1.PNG" style="width: 25%; height: auto;"></li>
+        </ul>
+        <ul>
             <li>
-                <h3>Inventory Application</h3>
-                <ul>
-                    <ul display="flex">
-                        <li><img src="Inventory_Pic_Login.PNG" style="width: 25%; height: auto;"></li>
-                        <li><a href="link-to-project">Inventory Git</a></li>
-                        <li><img src="Inventory_Pic1.PNG" style="width: 25%; height: auto;"></li>
-                    </ul>
-                    <li>
-                        <h4>Description</h4>
-                        <p> This artifact is an inventory application designed to be ambiguous in nature, having the ability to store any kind of item with simply a name, description, quantity, and photo. 
-                            The basic application is a base structure to showcase the idea, which can later be customized to client needs. The application currently allows for user creation and login with minimal security implementation. 
-                            Security will be applied in a future iteration that will be explained in depth later. 
-                        </p>
-                    </li>
-                    <li>
-                        <h4>Software Engineering and Design</h4>
-                        <p> The first enhancement to the inventory application covered the topic of Software Engineering and Design. 
-                            The enhancement involved introducing the ability to add a photo to accompany each item in the inventory, optionally. Adding this functionality involved creating a new “view” or display area for the image under the item’s details page, adding a camera button to access the device’s camera for getting the image, and developing a connection between the fragments that ultimately sends the data to the database. 
-                            To transport data out of the details fragment to the ultimate destination of the database, I created a bundle of data that is listened for in the inventory’s main fragment. 
-                            After which, I called a custom database CRUD function to update the items photo data in the database. 
-                        </p>
-                    </li>
-                    
-                    <li>
-                        <h4>Databases</h4>
-                        <p>The second enhancement involves integrating a cloud database into the application instead of an SQLite database. 
-                            Originally, the goal was to integrate MongoDB, however, as of this year, MongoDB for mobile applications has been deprecated. 
-                            I decided to use Google’s version of a cloud hosted database called Firebase. 
-                            The total application uses two databases, one for users and another for the items stored. 
-                            Currently the only database updated is the items database which is now static in the cloud and can be shared across devices. 
-                            However, the user database used for authentication to the application and overall access, has not yet been updated to this cloud platform. Future iterations are being developed with this implementation. 
-                            Adding this database to the artifact is actually quite simple, thanks to Google. First, I had to set up an account and register my app with Firebase. Once doing this I simply downloaded the SDK and JSON document provided for my specific project. Placing the documents in the right place amongst the hierarchy of files allows the application to connect to the database with a stable internet connection. 
-                            The final step involves creating CRUD functions to manipulate the data from the database. 
-                        </p>
-                    </li>
-                </ul>
+                <h4>Description</h4>
+                <p> This artifact is an inventory application designed to be ambiguous in nature, having the ability to store any kind of item with simply a name, description, quantity, and photo. 
+                    The basic application is a base structure to showcase the idea, which can later be customized to client needs. The application currently allows for user creation and login with minimal security implementation. 
+                    Security will be applied in a future iteration that will be explained in depth later. 
+                </p>
             </li>
             <li>
+                <h4>Software Engineering and Design</h4>
+                <p> The first enhancement to the inventory application covered the topic of Software Engineering and Design. 
+                    The enhancement involved introducing the ability to add a photo to accompany each item in the inventory, optionally. Adding this functionality involved creating a new “view” or display area for the image under the item’s details page, adding a camera button to access the device’s camera for getting the image, and developing a connection between the fragments that ultimately sends the data to the database. 
+                    To transport data out of the details fragment to the ultimate destination of the database, I created a bundle of data that is listened for in the inventory’s main fragment. 
+                    After which, I called a custom database CRUD function to update the items photo data in the database. 
+                </p>
+            </li>
+                 
+            <li>
+                <h4>Databases</h4>
+                <p>The second enhancement involves integrating a cloud database into the application instead of an SQLite database. 
+                    Originally, the goal was to integrate MongoDB, however, as of this year, MongoDB for mobile applications has been deprecated. 
+                    I decided to use Google’s version of a cloud hosted database called Firebase. 
+                    The total application uses two databases, one for users and another for the items stored. 
+                    Currently the only database updated is the items database which is now static in the cloud and can be shared across devices. 
+                    However, the user database used for authentication to the application and overall access, has not yet been updated to this cloud platform. Future iterations are being developed with this implementation. 
+                    Adding this database to the artifact is actually quite simple, thanks to Google. First, I had to set up an account and register my app with Firebase. Once doing this I simply downloaded the SDK and JSON document provided for my specific project. Placing the documents in the right place amongst the hierarchy of files allows the application to connect to the database with a stable internet connection. 
+                    The final step involves creating CRUD functions to manipulate the data from the database. 
+                </p>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
                 <h3>Course Schedule Application</h3>
-                <ul>
-                    <li><a href="link-to-project">CourseApp Git</a></li>
-                    <li>
-                        <h4>Description</h4>
-                        <p> Artifact two for my project is an application used to display a list of courses, a sample schedule, in order from first to last in the series. 
-                            The application initially utilized a BST, binary search tree, to store the classes in a pre-ordered fashion with access functions that allow for accessing a single course or a list of them all in the form of the sample schedule. 
-                            The algorithm utilizes Create, Read, Update, and Delete functions per coding standards when interacting with data structures. 
-                            It also introduces a pointer structure called Node that points to information depending on which part of the tree is being accessed. 
-                        </p>
-                    </li>
-                    <li>
-                        <h4>Data Structures and Algorithms</h4>
-                        <p> The enhancement I chose to make is to add a hash table from scratch that also stores and prints the course data. 
-                            A hash table should be able to return the data faster than a BST in the same format with a more intuitive form of organization. 
-                            To create this hash table, I initialize a list with a set of pointers. 
-                            When data is loaded, a hash function finds the array index for the course. 
-                            The pointers at this index are then traversed until the inserting course’s number is less than the next course in the list or the next one is null. 
-                            At this point the new node is inserted into the linked list. 
-                            Each custom CRUD function was then required to manipulate and further access the data stored in the new hash table. 
-                        </p>
-                    </li>
-                </ul>
+            </li>
+            <li><a href="link-to-project">CourseApp Git</a></li>
+        </ul>
+        <ul>
+            <li>
+                <h4>Description</h4>
+                <p> Artifact two for my project is an application used to display a list of courses, a sample schedule, in order from first to last in the series. 
+                    The application initially utilized a BST, binary search tree, to store the classes in a pre-ordered fashion with access functions that allow for accessing a single course or a list of them all in the form of the sample schedule. 
+                    The algorithm utilizes Create, Read, Update, and Delete functions per coding standards when interacting with data structures. 
+                    It also introduces a pointer structure called Node that points to information depending on which part of the tree is being accessed. 
+                </p>
+            </li>
+            <li>
+                <h4>Data Structures and Algorithms</h4>
+                <p> The enhancement I chose to make is to add a hash table from scratch that also stores and prints the course data. 
+                    A hash table should be able to return the data faster than a BST in the same format with a more intuitive form of organization. 
+                    To create this hash table, I initialize a list with a set of pointers. 
+                    When data is loaded, a hash function finds the array index for the course. 
+                    The pointers at this index are then traversed until the inserting course’s number is less than the next course in the list or the next one is null. 
+                    At this point the new node is inserted into the linked list. 
+                    Each custom CRUD function was then required to manipulate and further access the data stored in the new hash table. 
+                </p>
             </li>
         </ul>
     </section>
