@@ -54,8 +54,34 @@
                 <h3>Inventory Application</h3>
                 <ul>
                     <li><a href="link-to-project">Inventory Git</a></li>
-                    <li>Enhancement 1</li>
-                    <li>Enhancement 2</li>
+                    <li>
+                        <h4>Description</h4>
+                        <p> This artifact is an inventory application designed to be ambiguous in nature, having the ability to store any kind of item with simply a name, description, quantity, and photo. 
+                            The basic application is a base structure to showcase the idea, which can later be customized to client needs. The application currently allows for user creation and login with minimal security implementation. 
+                            Security will be applied in a future iteration that will be explained in depth later. 
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Software Engineering and Design</h4>
+                        <p> The first enhancement to the inventory application covered the topic of Software Engineering and Design. 
+                            The enhancement involved introducing the ability to add a photo to accompany each item in the inventory, optionally. Adding this functionality involved creating a new “view” or display area for the image under the item’s details page, adding a camera button to access the device’s camera for getting the image, and developing a connection between the fragments that ultimately sends the data to the database. 
+                            To transport data out of the details fragment to the ultimate destination of the database, I created a bundle of data that is listened for in the inventory’s main fragment. 
+                            After which, I called a custom database CRUD function to update the items photo data in the database. 
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <h4>Databases</h4>
+                        <p>The second enhancement involves integrating a cloud database into the application instead of an SQLite database. 
+                            Originally, the goal was to integrate MongoDB, however, as of this year, MongoDB for mobile applications has been deprecated. 
+                            I decided to use Google’s version of a cloud hosted database called Firebase. 
+                            The total application uses two databases, one for users and another for the items stored. 
+                            Currently the only database updated is the items database which is now static in the cloud and can be shared across devices. 
+                            However, the user database used for authentication to the application and overall access, has not yet been updated to this cloud platform. Future iterations are being developed with this implementation. 
+                            Adding this database to the artifact is actually quite simple, thanks to Google. First, I had to set up an account and register my app with Firebase. Once doing this I simply downloaded the SDK and JSON document provided for my specific project. Placing the documents in the right place amongst the hierarchy of files allows the application to connect to the database with a stable internet connection. 
+                            The final step involves creating CRUD functions to manipulate the data from the database. 
+                        </p>
+                    </li>
                 </ul>
             </li>
             <li>
