@@ -54,8 +54,10 @@
         <h2>Artifacts</h2>
         <h3>Inventory Application</h3>
         <a href="link-to-project">Inventory Git</a>
-        <img src="Inventory_Pic_Login.PNG" style="width: 25%; height: auto;">
-        <img src="Inventory_Pic1.PNG" style="width: 25%; height: auto;">
+        <div class="image-container">
+            <img src="Inventory_Pic_Login.PNG" class="project-image">
+            <img src="Inventory_Pic1.PNG" class="project-image">
+        </div>
         <ul>
             <li>
                 <h4>Description</h4>
@@ -121,4 +123,16 @@
         <p>&copy; 2024 Charles Beavers. All rights reserved.</p>
     </footer>
 </body>
+
+<style>
+    .image-container {
+        display: flex; /* Arrange images horizontally */
+        margin-bottom: 1em; /* Space below the images */
+    }
+    .project-image {
+        margin-right: 10px; /* Space between images */
+        width: 25%; /* Set a width for images */
+        height: auto; /* Maintain aspect ratio */
+    }
+</style>
 </html>
