@@ -40,6 +40,12 @@ section h2 {
     color: #007C92; /* Ocean teal for section headings */
 }
 
+iframe {
+    border: none;
+    width: 80%;
+    height: 500px;
+}
+
 footer {
     text-align: center;
     padding: 20px 0;
