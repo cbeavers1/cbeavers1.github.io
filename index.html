@@ -87,8 +87,26 @@
             <li>
                 <h3>Course Schedule Application</h3>
                 <ul>
-                    <li><a href="link-to-project">Inventory Git</a></li>
-                    <li>Enhancement 1</li>
+                    <li><a href="link-to-project">CourseApp Git</a></li>
+                    <li>
+                        <h4>Description</h4>
+                        <p> Artifact two for my project is an application used to display a list of courses, a sample schedule, in order from first to last in the series. 
+                            The application initially utilized a BST, binary search tree, to store the classes in a pre-ordered fashion with access functions that allow for accessing a single course or a list of them all in the form of the sample schedule. 
+                            The algorithm utilizes Create, Read, Update, and Delete functions per coding standards when interacting with data structures. 
+                            It also introduces a pointer structure called Node that points to information depending on which part of the tree is being accessed. 
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Data Structures and Algorithms</h4>
+                        <p> The enhancement I chose to make is to add a hash table from scratch that also stores and prints the course data. 
+                            A hash table should be able to return the data faster than a BST in the same format with a more intuitive form of organization. 
+                            To create this hash table, I initialize a list with a set of pointers. 
+                            When data is loaded, a hash function finds the array index for the course. 
+                            The pointers at this index are then traversed until the inserting course’s number is less than the next course in the list or the next one is null. 
+                            At this point the new node is inserted into the linked list. 
+                            Each custom CRUD function was then required to manipulate and further access the data stored in the new hash table. 
+                        </p>
+                    </li>
                 </ul>
             </li>
         </ul>
