@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Charles Beavers, software engineering and robotics portfolio.">
+    <title>Charles Beavers | Software &amp; Robotics</title>
+    <style>
+      body {
+        margin: 0;
+        background: #101923;
+        color: #eaf3fa;
+        font: 1rem/1.65 system-ui
+      }
+      main,footer {
+        width: min(68rem,calc(100% - 3rem));
+        margin: auto
+      }
+      header {
+        padding: clamp(3rem,10vw,7rem) 0 2rem
+      }
+      h1 {
+        font-size: clamp(3rem,9vw,6rem);
+        line-height: 1;
+        margin: .25em 0
+      }
+      h2 {
+        font-size: 1.8rem
+      }
+      a {
+        color: #8cf0d1;
+        text-underline-offset: .2em
+      }
+      a: focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 4px
+      }
+      .eyebrow {
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: #8cf0d1
+      }
+      .intro {
+        max-width: 46rem;
+        font-size: 1.18rem
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(min(100%,17rem),1fr));
+        gap: 1rem
+      }
+      .card {
+        border: 1px solid #405362;
+        background: #182632;
+        padding: 1.2rem;
+        border-radius: .7rem
+      }
+      .card h3 {
+        margin: 0;
+        overflow-wrap: anywhere
+      }
+      section {
+        margin: 2.5rem 0
+      }
+      ul {
+        padding-left: 1.3rem;
+        columns: 2
+      }
+      li {
+        margin-bottom: .55rem;
+        overflow-wrap: anywhere
+      }
+      footer {
+        padding: 1rem 0 3rem;
+        border-top: 1px solid #405362
+      }
+      @media(max-width:550px) {
+        ul {
+          columns: 1
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Software engineering · Robotics</p>
+        <h1>Charles Beavers</h1>
+        <p class="intro">Computer science graduate and M.S. student in Intelligent Robotic Systems at Kennesaw State University. My projects span computer vision, robotic modeling, and full-stack application development.</p>
+        <nav aria-label="Portfolio links"><a href="resume.pdf" download>Download résumé (PDF)</a> · <a href="#featured">Explore projects</a></nav>
+      </header>
+      <section aria-labelledby="featured">
+        <h2 id="featured">Explore Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3><a href="https://github.com/cbeavers1/Planar-Tracker">Planar Tracker</a></h3>
+            <p>Planar object tracking from video with OpenCV in Python and C++.</p>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/cbeavers1/SoftRobot-Transform-Workspace">SoftRobot Transform Workspace</a></h3>
+            <p>MATLAB forward kinematics and workspace visualization for a two-degree-of-freedom soft robot.</p>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/cbeavers1/InventoryApplication">Inventory Application</a></h3>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/cbeavers1/Dashboard">Dashboard</a></h3>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/cbeavers1/CPP-Binary-Search-Tree">C++ Binary Search Tree</a></h3>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/cbeavers1/Bank-Application">Bank Application</a></h3>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/cbeavers1/counter-app">Counter App</a></h3>
+          </article>
+          <article class="card">
+            <h3><a href="https://github.com/cbeavers1/cbeavers1.github.io">Portfolio Source</a></h3>
+          </article>
+        </div>
+      </section>
+      <section id="repositories">
+        <h2>More on GitHub</h2>
+        <p><a href="https://github.com/cbeavers1?tab=repositories">View repository list on GitHub</a></p>
+      </section>
+      <section>
+        <h2>Technical skills</h2>
+        <p>Python, C++, JavaScript, OpenCV, MATLAB, React, Node.js, AWS, Git, CMake, and Linux.</p>
+      </section>
+    </main>
+    <footer>Charles Beavers · <a href="https://github.com/cbeavers1">GitHub profile</a></footer>
+  </body>
+</html>
